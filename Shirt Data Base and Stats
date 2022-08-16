@@ -1,0 +1,23 @@
+--Create a shirt design database
+
+CREATE TABLE shirts (name text, color text, size text, price integer, maxqty integer, stocked text);
+
+Insert into shirts values ("Apple", "Blue", "XL", 5, 23, "yes");
+Insert into shirts values ("BBQ", "Black", "S", 6, 19, "yes");
+Insert into shirts values ("CAR", "Green", "S", 8, 11, "no");
+Insert into shirts values ("DOG", "Red", "L", 3, 33, "no");
+Insert into shirts values ("Elk", "Pink", "XL", 3, 1, "yes");
+Insert into shirts values ("Frog", "Red", "M", 4, 25, "yes");
+Insert into shirts values ("Grapes", "Blue", "L", 6, 19, "no"); 
+Insert into shirts values ("Hats", "White", "M", 10, 8, "yes");
+Insert into shirts values ("Ice", "Green", "XS", 2, 2, "no");
+Insert into shirts values ("Junk", "Grey", "L", 3, 19, "yes");
+Insert into shirts values ("Land", "Brown",  "S", 4, 209, "yes");
+Insert into shirts values ("Money", "Green", "XXXL", 18, 24, "yes");
+Insert into shirts values ("Nope", "White", "L", 9, 44, "yes");
+Insert into shirts values ("Ocean", "Blue", "M", 10, 9, "no");
+Insert into shirts values ("Planes", "Pink", "L", 5, 10, "yes");
+
+--Display the database order by price 
+select * from shirts order by price 
+
